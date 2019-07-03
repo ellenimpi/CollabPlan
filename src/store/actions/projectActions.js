@@ -7,7 +7,7 @@ export const createProject = (project) =>{
             ...project,
             authorFN: profile.firstName, 
             authorLN: profile.lastName,
-            autorId: uid,
+            authorId: uid,
             createdAt: new Date()
         }).then(()=> {
             dispatch({type: 'CREATE', project});
